@@ -1,0 +1,64 @@
+body {
+    display: flex;               /* Enables Flexbox */
+    flex-direction: column;      /* Stacks elements vertically */
+    align-items: center;         /* Centers elements horizontally */
+    justify-content: center;     /* Centers elements vertically */
+    height: 100vh;               /* Full viewport height */
+    margin: 0;                   /* Removes default margin */
+    background-color: #ffc8a1;   /* Keeps your existing background color */
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;         /* Space below the heading */
+    text-align: center;          /* Centers text */
+}
+
+h3 {
+    font-size: 1.5rem;           /* Adjust font size if needed */
+    margin-bottom: 2rem;         /* Space below the subheading */
+    text-align: center;          /* Centers text */
+}
+
+#loginContainer {
+    display: flex;               /* Enables Flexbox for internal alignment */
+    flex-direction: column;      /* Aligns input and buttons vertically */
+    align-items: center;         /* Centers children horizontally */
+    justify-content: center;     /* Centers children vertically */
+    width: 50vw;
+    padding: 20px;
+    border-radius: 10px;         /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a slight shadow */
+}
+
+input#defaultPrompt {
+    background-color: black;
+    color: wheat;
+    padding: 10px;               /* Adds padding inside the input */
+    margin-bottom: 20px;         /* Space below the input */
+    width: 100%;                 /* Makes input span the container width */
+}
+
+#buttonContainer {
+    display: flex;               /* Align buttons next to each other */
+    gap: 10px;                   /* Space between buttons */
+}
+
+#login, #signUp {
+    padding: 10px 20px;          /* Adds padding for buttons */
+    font-size: 1rem;             /* Adjust button font size */
+    border: none;                /* Removes default border */
+    border-radius: 5px;          /* Adds slight rounding to buttons */
+    cursor: pointer;             /* Changes cursor to pointer on hover */
+}
+
+#login {
+    background-color: #4CAF50;   /* Green background */
+    color: white;                /* White text */
+}
+
+#signUp {
+    background-color: #008CBA;   /* Blue background */
+    color: white;                /* White text */
+}
