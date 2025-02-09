@@ -1,0 +1,51 @@
+<!-- this is the home page of the website
+ it has a top navigation with for home, resources and about us.
+ it has a div that displays a verse of the day.
+ and it has a "start a quiz section on the page that allows the user to start taking a quiz by setting the parameters they would like" -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/src/assets/styles/home.css">
+    <title>BeKnown - Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/src/pages/home.html">Home</a></li>
+                <li><a href="/src/pages/resources.html">Resources</a></li>
+                <li><a href="/src/pages/about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="verseOfTheDay">
+            <h2>Verse of the Day</h2>
+            <p id="verse">"For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future." - Jeremiah 29:11</p>
+        </section>
+        <section id="startQuiz">
+            <h2>Start a Quiz</h2>
+            <form id="quizForm">
+                <label for="quizTopic">Choose a topic:</label>
+                <select id="quizTopic" name="quizTopic">
+                    <option value="john">Book of John</option>
+                    <option value="matthew">Book of Matthew</option>
+                    <option value="genesis">Book of Genesis</option>
+                </select>
+                <br>
+                <label for="difficulty">Choose difficulty:</label>
+                <select id="difficulty" name="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <br>
+                <button type="submit">Start Quiz</button>
+            </form>
+        </section>
+    </main>
+    <script src="/src/scripts/app/home.js"></script>
+</body>
+</html>

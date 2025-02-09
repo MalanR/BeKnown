@@ -79,42 +79,8 @@ h2 {
     margin-bottom: 10px;
 }
 
-p#verse {
+p {
     font-size: 1.2rem;
     color: var(--text-color);
     margin: 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-label {
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-select {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid var(--section-border);
-    border-radius: 5px;
-    width: 100%;
-    max-width: 300px;
-}
-
-button[type="submit"] {
-    background-color: var(--button-background);
-    color: var(--button-text-color);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button[type="submit"]:hover {
-    background-color: var(--button-hover-background);
 }
